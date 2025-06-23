@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import*
 
 import tkintermapview
 
@@ -51,7 +51,7 @@ def add_user():
 def show_users():
     listbox_lista_obiektow.delete(0, END)
     for idx,user in enumerate(users):
-        listbox_lista_obiektow.insert(idx,f'{idx+1},{user,name} {user,surname}')
+        listbox_lista_obiektow.insert(idx,f'{idx+1},{user.name} {user.surname}')
 
 def remove_user():
     i=listbox_lista_obiektow.index(ACTIVE)
